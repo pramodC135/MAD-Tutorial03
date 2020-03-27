@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidFragments</string>
+    <string name="Fragment01">FRAGMENT 01</string>
+    <string name="frag01Btn">FRAGMENT 01</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/frag01Btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#49ebe2"
+        android:onClick="changeFragment"
+        android:string="frag01Btn"
+        android:text="@string/Fragment01"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/frag02Btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="#49ebe2"
+        android:onClick="changeFragment"
+        android:string="Fragment 02"
+        android:text="Fragment 02"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@+id/frag01Btn"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <fragment
+        android:id="@+id/fragDefault"
+        android:name="tute3.sliit.androidfragments.Fragment1"
+        android:layout_width="415dp"
+        android:layout_height="558dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag02Btn"
+        app:layout_constraintVertical_bias="0.448" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
